@@ -1,0 +1,212 @@
+@import "../../mixin.scss";
+.detailsBanner {
+    width: 100%;
+    background-color: var(--black);
+    padding-top: 100px;
+    margin-bottom: 50px;
+    @include md {
+        margin-bottom: 0;
+        padding-top: 180px;
+        min-height: 700px;
+    }
+
+   
+
+    .content {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        gap: 25px;
+        @include md {
+            gap: 50px;
+            flex-direction: row;
+        }
+        .left {
+            flex-shrink: 0;
+            .posterImg {
+                width: 100%;
+                display: block;
+                border-radius: 12px;
+                @include md {
+                    max-width: 350px;
+                }
+            }
+        }
+        .right {
+            color: white;
+            .title {
+                font-size: 28px;
+                line-height: 40px;
+                @include md {
+                    font-size: 34px;
+                    line-height: 44px;
+                }
+            }
+           
+            .genres {
+                margin-bottom: 25px;
+                flex-flow: row wrap;
+            }
+            .overview {
+                margin-top: 50px;
+                margin-bottom: 25px;
+                .heading {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+                .description {
+                    line-height: 24px;
+                    @include md {
+                        padding-right: 100px;
+                    }
+                }
+            }
+            
+
+            .info {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 15px 0;
+                display: flex;
+                flex-direction: column;
+                @include md {
+             flex-direction: row;
+                }
+         
+                .infoItem {
+                    margin-right: 10px;
+                    display: flex;
+                    flex-flow: row wrap;
+        
+                }
+                .text {
+                    margin-right: 10px;
+                    opacity: 0.5;
+                    line-height: 24px;
+                    &.bold {
+                        font-weight: 600;
+                        opacity: 1;
+                    }
+
+                }
+                .bbutton{
+                
+                    height: 40px;
+                    margin-top: 20px;
+           
+
+                    background: var(--gradient);
+                    color: #fff;
+                    outline: 0;
+                    display: flex;
+                    font-weight: bolder;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 30px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    @include md {
+                        width: 150px;
+                        margin-top: -12px;
+                           }
+                   
+                }
+            }
+        }
+    }
+
+    .detailsBannerSkeleton {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        gap: 25px;
+        @include md {
+            gap: 50px;
+            flex-direction: row;
+        }
+        .contentWrapper {
+            display: flex;
+height: 70vh;
+  justify-content: center;
+  align-items: center;
+        }
+      
+       
+    }
+}
+    .booking-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        @include md{
+            h2 {
+                padding: 10px;
+                margin-top: 20px;
+                display: flex;
+                width: 60%;
+                color: #1850a5;
+                justify-content: center;
+              }
+        }
+        h2 {
+          font-size: 1.5rem;
+          color: #1854ae;
+          margin-bottom: 2rem;
+          margin-top: 20px;
+        }
+        form{
+            @include md{
+                width: 70%;
+                
+            }
+        }
+        
+        label {
+          font-size: 1.2rem;
+     
+          font-weight: bold;
+          text-align: left;
+          width: 100%;
+        }
+        
+        input {
+          padding: 1rem;
+          margin-bottom: 1.5rem;
+          margin-top: 20px;
+          width: 100%;
+          font-size: 1rem;
+        
+          outline: none;
+          border-radius: 0.5rem;
+
+          &:hover {
+            outline: 3px solid #f89e00;
+      
+          }
+        }
+        
+        button {
+          padding: 1rem 2rem;
+          background-color: #da2f68;
+          color: #fff;
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 1rem;
+          margin-top: 1.5rem;
+          transition: all 0.2s ease-in-out;
+          
+          &:hover {
+            background-color: darken(#da2f68, 10%);
+            cursor: pointer;
+          }
+        }
+      
+     
+      
+      
+      
+      
+      
+      
+      
+}
